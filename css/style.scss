@@ -1,0 +1,41 @@
+.main-banner {
+    
+    height: 100vh;
+     .item {
+        background-image: url("../images/carousel1.jpg");
+        background-size: cover;
+        height: 100vh;
+        &.item-2 {
+            background-image: url("../images/carousel2.jpg");
+        }
+        &.item-3 {
+            background-image: url("../images/carousel3.jpg");
+        }
+        &.item-4 {
+            background-image: url("../images/carousel4.jpg");
+        }
+    }
+    article {
+        padding: 344px 0 309px;
+    }
+}
+header {
+    z-index: 100;
+    ul {
+        li {
+            text-align: center;
+        
+            &:first-of-type {
+            a {              
+                span {
+                    padding: 7px 27px 7px 33px;
+                    display: block;
+                    color: #FFFFFF;
+                    border: 1px solid #FFFFFF;
+                        border-radius: 15px;
+                }
+            }
+        }
+        }
+    }
+}
