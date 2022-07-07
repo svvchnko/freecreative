@@ -1,10 +1,34 @@
+@font-face {
+  font-family: "20 Kopeek";
+  src: url(../fonts/20Kopeek.woff) format("woff2"), url(../fonts/20Kopeek.woff) format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "20 Kopeek book";
+  src: url(../fonts/20Kopeek-Book.woff) format("woff2"), url(../fonts/20Kopeek-Book.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .main-banner {
   height: 100vh;
+}
+@media screen and (max-width: 1024px) {
+  .main-banner {
+    height: 70vh;
+  }
 }
 .main-banner .item {
   background-image: url("../images/carousel1.jpg");
   background-size: cover;
   height: 100vh;
+}
+@media screen and (max-width: 1024px) {
+  .main-banner .item {
+    height: 70vh;
+  }
 }
 .main-banner .item.item-2 {
   background-image: url("../images/carousel2.jpg");
@@ -16,11 +40,68 @@
   background-image: url("../images/carousel4.jpg");
 }
 .main-banner article {
-  padding: 344px 0 309px;
+  padding: 269px 0 309px;
+}
+@media screen and (max-width: 1024px) {
+  .main-banner article {
+    padding: 230px 0 100px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .main-banner article {
+    text-align: center;
+    padding-top: 300px;
+  }
+}
+.main-banner article button {
+  padding: 23px 47px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 40px;
+  font-family: "20 Kopeek book";
+  font-size: 18px;
+  line-height: 140%;
+}
+@media screen and (max-width: 1024px) {
+  .main-banner article button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+.main-banner article h1 {
+  margin-bottom: 30px;
+  font-family: "20 Kopeek book";
+  font-size: 55px;
+  line-height: 100%;
+  color: #181818;
+}
+@media screen and (max-width: 1024px) {
+  .main-banner article h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+}
+.main-banner article h3 {
+  margin-bottom: 65px;
+  font-family: "20 Kopeek book";
+  font-size: 34px;
+  line-height: 110%;
+  color: #181818;
+}
+@media screen and (max-width: 1024px) {
+  .main-banner article h3 {
+    margin-bottom: 35px;
+    font-size: 20px;
+  }
 }
 
 header {
   z-index: 100;
+}
+@media screen and (max-width: 580px) {
+  header nav {
+    flex-direction: column;
+  }
 }
 header ul li {
   text-align: center;
@@ -31,4 +112,19 @@ header ul li:first-of-type a span {
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   border-radius: 15px;
+  font-family: "20 Kopeek";
+  font-size: 16px;
+  line-height: 140%;
+}
+@media screen and (max-width: 1024px) {
+  header ul li:first-of-type a {
+    display: inline-block;
+  }
+}
+header p {
+  font-family: "20 Kopeek";
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
 }/*# sourceMappingURL=style.css.map */
