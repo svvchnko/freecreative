@@ -27,15 +27,13 @@ $secondary_font: '20 Kopeek book';
 .main-banner {
     
     height: 100vh;
-    @include max-screen(1024px) {
-            height: 70vh;
-        }
+    
      .item {
         background-image: url("../images/carousel1.jpg");
         background-size: cover;
         height: 100vh;
         @include max-screen(1024px) {
-            height: 70vh;
+            height: 75vh;
         }
         &.item-2 {
             background-image: url("../images/carousel2.jpg");
@@ -48,52 +46,7 @@ $secondary_font: '20 Kopeek book';
             background-image: url("../images/carousel4.jpg");
         }
     }
-    article {
-        padding: 269px 0 309px;
-        @include max-screen(1024px) {
-                    padding: 230px 0 100px;
-            }
-                        @include max-screen(580px) {
-                            text-align: center;
-                            padding-top: 300px;
-                        }
-        button {
-            padding: 23px 47px;
-            background-color: #FFFFFF;
-            border: none;
-            border-radius: 40px;
-            font-family: $secondary_font;
-            font-size: 18px;
-            line-height: 140%;
-            @include max-screen(1024px) {
-                    padding: 10px 20px;
-                    font-size: 14px;                
-                }            
-        }
-        h1 {
-            margin-bottom: 30px;
-            font-family: $secondary_font;
-            font-size: 55px;
-            line-height: 100%;
-            color: #181818;
-            @include max-screen(1024px) {
-                margin-bottom: 20px;
-                font-size: 30px;
-            }
-        }
-        h3 {
-            margin-bottom: 65px;
-            font-family: $secondary_font;
-            font-size: 34px;
-            line-height: 110%;
-            color: #181818;
-            @include max-screen(1024px) {
-                margin-bottom: 35px;
-                font-size: 20px;
-
-            }
-        }    
-    }
+    
 }
 header {
     z-index: 100;
@@ -131,8 +84,5 @@ header {
     p {
         font-family: $main_font;
         color: $white-color;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 19px;
     }
 }
